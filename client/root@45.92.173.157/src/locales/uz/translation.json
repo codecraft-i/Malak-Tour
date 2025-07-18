@@ -1,0 +1,138 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "international_tours": "Xalqaro sayohatlar",
+    "national_tours": "O'zbekiston bo'ylab turlar",
+    "pic_gallary": "Suratlar galereyasi",
+    "contacts": "Kontaktlar",
+    "call_me": "Menga qo'ng'iroq qiling",
+    "more": "ko'proq",
+    "connection": "Bog'lanish"
+  },
+  "intro": {
+    "h_tx1": "Qadimiy Misr sehrlari",
+    "h_tx1_sb": "Piramidalar soyasida tarixiy sayohat",
+    "h_tx2": "Palma sohili rohati",
+    "h_tx2_sb": "Quyoshli dam va tropik briz",
+    "h_tx3": "Yashil o‘rmon gardishi",
+    "h_tx3_sb": "Tabiat quchog‘ida sof tinchlik",
+    "h_tx4": "Go‘zal sohil panoramasi",
+    "h_tx4_sb": "Cheksiz dengiz va oq qumlar",
+
+    "request_l_title": "So'rovnoma qoldirish",
+    "request_l": "So'rov qoldiring",
+    "name": "Ismingiz",
+    "phone_n": "Raqamingiz",
+    "input_a": "Boshqa",
+
+    "sc1": "So‘rovingiz qabul qilindi!",
+    "sc2": "Tez orada bog‘lanamiz.",
+
+    "send": "Yuborish",
+
+    "condition": "Maʼlumotlarni yuborish va yuklab olishga roziman."
+  },
+  "categorySections": {
+    "ancient": {
+      "title": "MOZIYGA SAYOHATLAR",
+      "subtitle": "Misr, Yunoniston, Hindiston, Xitoy, Yaponiya"
+    },
+    "europe": {
+      "title": "YEVROPA BO'YLAB TURLAR",
+      "subtitle": "Ispaniya, Fransiya, Germaniya, Italiya, Chernogoriya"
+    },
+    "eastAsia": {
+      "title": "SHARQIY OSIYOGA SAYOHATLAR",
+      "subtitle": "Tailand, Singapur, Malayziya, Vyetnam"
+    },
+    "coastal": {
+      "title": "SOHILBO'YI SAYOHATLAR",
+      "subtitle": "Maldivlar, Turkiya, Ispaniya, Vyetnam"
+    },
+    "more": "Batafsilroq"
+  },
+  "about": {
+    "features": {
+      "allTours": {
+        "title": "BARCHA SAYOHAT TURLARI",
+        "subtitle": "va faol hordiqning hamyonbop xilidan eng sarasigacha"
+      },
+      "guaranteed": {
+        "title": "KAFOLATLANGAN",
+        "subtitle": "xavfsizlik agentlik tomonidan ta'minlanadi"
+      },
+      "top100": {
+        "title": "SARA 100-LIKKA KIRAMIZ",
+        "subtitle": "O'zbekistondagi sayyohlik agentliklari orasida"
+      }
+    },
+    "title": "Biz haqimizda",
+    "intro": "Malak Tour – Ishonchli hamrohingiz dunyo bo‘ylab sayohatlarda",
+    "p1": "Malak Tour – bu minglab sayyohlar ishonchini qozongan, tajribali va ishonchli sayohat agentligi. Biz dunyoning eng mashhur yo‘nalishlariga unutilmas sayohatlarni tashkil qilamiz. Tailand, Vyetnam, Turkiya, Misr, BAA (Dubay), Gruziya, Chernogoriya kabi davlatlar bo‘ylab sayohatlar – bu bizning yo‘nalishlarimizning faqat bir qismi xolos.",
+    "p2": "Shuningdek, Angliya, Italiya, Fransiya, Germaniya kabi 29 dan ortiq Yevropa mamlakatlariga ham eksklyuziv tur paketlarimiz mavjud. Har bir mijoz uchun individual yondashuv asosida yo‘lga qo‘yilgan xizmatlarimiz orqali sayohatingiz yanada qulay va xotirjam o‘tadi.",
+    "p3": "Biz bilan siz nafaqat safarga chiqasiz, balki kerakli turistik vizalarni rasmiylashtirishda ham to‘liq yordam olasiz. Malak Tour – siz orzu qilgan sayohatga ishonchli yo‘llanma!",
+    "more": "Batafsilroq",
+    "imageAlt": "Sayohatchilar plyajda",
+    "stats": {
+      "quality": "sifatga kafolat",
+      "qualityHint": "barcha turlarga",
+      "satisfaction": "mamnun mijozlar",
+      "satisfactionHint": "so'rovlar natijasiga ko'ra",
+      "orders": "buyurtma",
+      "ordersHint": "joriy yilning o‘zida"
+    }
+  },
+  "gallery": {
+    "title": "SURATLAR GALAREYASI",
+    "subtitle": "Kafolatli sifat va kelishilgan muddatlarga sodiqlik",
+    "viewAll": "Barchasini ko‘rish",
+    "close": "Yopish",
+    "imageAlt": "sayohat rasmi",
+    "modalImageAlt": "Katta rasm"
+  },
+  "partners": {
+    "title": "Bizning hamkorlarimiz",
+    "subtitle": "Biz boshqalar ishonchini oqlay olamiz"
+  },
+  "testimonials": {
+    "title": "Faoliyatimiz haqidagi fikr-mulohazalar",
+    "subtitle": "Sizning fikringiz biz uchun muhim, har bir izohni e’tiborga olamiz.",
+    "loading": "Maʼlumot yuklanmoqda..."
+  },
+  "footer": {
+    "brand": {
+      "title": "PREMIUM SIFATLI",
+      "highlight": "SAYOHAT",
+      "tagline": "DUNYO BIR QADAMINGIZDA"
+    },
+    "cta": "SO‘ROVNOMA QOLDIRING",
+    "newsletter": {
+      "label": "Yangiliklar va aksiya uchun",
+      "thanks": "Rahmat, obuna bo‘ldingiz!",
+      "placeholder": "Email manzilingiz",
+      "button": "Obuna bo‘lish",
+      "sending": "Yuborilmoqda…"
+    },
+    "address": "Toshkent, Chilonzor 19 kv 60 dom",
+    "hours": "24/7 Hizmat ko'rsatish",
+    "loading": "Yuborilmoqda…",
+    "copyright": "Barcha huquqlar himoyalangan"
+  },
+  "galleries": {
+    "allPhotos": "Suratlar Galereyasi"
+  },
+  "about-p": {
+    "title": "Kompaniya haqida",
+    "intro": "Bizning sayohlik kompaniyamiz – bu yangi ufqlarni kashf etishni, turli mamlakatlar va madaniyatlar muhitiga sho‘ng‘ishni, hamda unutilmas his-tuyg‘ularni boshdan kechirishni istaganlar uchun ishonchli hamkor.",
+    "p1": "Biz tajribali sayohatchilar uchun ham, xorijga birinchi bor yo‘l olayotganlar uchun ham mos keladigan qulay va mazmunli turlarni tashkil etishga ixtisoslashganmiz.",
+    "p2": "“Best Magistic Tour” sayohlik kompaniyasi sizga Toshkentdan quyidagi yo‘nalishlarga sayohatlarni taklif etadi: Misr, Turkiya, Dubay, Vyetnam, Tailand, Maldiv orollari, Bali, Malayziya, Gurjiston, Ozarbayjon va Yevropa mamlakatlari.",
+    "p3": "Bizning turoperatorlik agentligimiz siz va oilangiz uchun dunyoning eng go‘zal mamlakatlarida unutilmas dam olishni tashkil etadi. Biz O‘zbekistonning sayohlik bozorida yetakchi kompaniyalardan biri sifatida tan olinganmiz.",
+    "contactCall": "Bugunoq biz bilan bog‘laning – sizning orzu qilgan sarguzashtingizni boshlashga yordam beramiz!",
+    "signature": {
+      "respectfully": "Hurmat bilan,",
+      "director": "“Best Magistic Tour” direktori",
+      "name": "Latipova Mohigul Sheralieva"
+    }
+  }
+}

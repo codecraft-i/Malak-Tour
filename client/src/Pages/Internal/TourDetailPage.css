@@ -1,0 +1,338 @@
+/* =========================
+   General variables / reset
+   ========================= */
+:root {
+  --accent: #e53935;        /* asosiy qizil rang */
+  --accent-hover: #c62828;
+  --dark: #222;
+  --text: #444;
+  --bg-light: #f4f4f4;
+  --radius: 0.75rem;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --max-width: 1200px;
+  --transition: 0.25s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* =========================
+   Intro section
+   ========================= */
+.tour-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2.5rem 1rem 3rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.tour-text {
+  flex: 1 1 55%;
+}
+
+.tour-text h1 {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  margin-bottom: 1.25rem;
+  color: var(--dark);
+}
+
+.tour-about {
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.tour-about strong,
+.tour-about b {
+  font-weight: 700;
+}
+
+.tour-image-wrapper {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tour-main-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.tour-price {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.book-btn {
+  display: inline-block;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem 1.75rem;
+  margin-top: 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.book-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.book-btn:active,
+.modal-submit:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Gallery
+   ========================= */
+.tour-gallery {
+  background: var(--bg-light);
+  padding: 3rem 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 2vw, 1.75rem);
+  margin-bottom: 2rem;
+  color: var(--dark);
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   YouTube & description
+   ========================= */
+.tour-social {
+  padding: 3rem 1rem 4rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tour-social iframe {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.social-description {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* =========================
+   Misc states
+   ========================= */
+.loading,
+.not-found {
+  text-align: center;
+  padding: 4rem 1rem;
+  font-size: 1.25rem;
+}
+
+/* =========================
+   Responsive tweaks
+   ========================= */
+@media (max-width: 992px) {
+  .tour-main-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-intro {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .tour-image-wrapper {
+    order: -1;   /* rasmni tepaga chiqarish */
+  }
+
+  .tour-main-img {
+    height: 220px;
+  }
+
+  .book-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-window {
+    padding: 1.75rem 1.25rem 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.1rem;
+  }
+
+  .modal-form input,
+  .modal-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   Lightbox (Gallery modal)
+   ========================= */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: var(--radius);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.15);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   Lightbox (Gallery modal)
+   ========================= */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lightbox-content img {
+  max-width: 80vw;   /* ⬅️ sal kichikroq */
+  max-height: 80vh;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .lightbox-content img {
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+}

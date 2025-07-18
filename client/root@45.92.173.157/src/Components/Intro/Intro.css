@@ -1,0 +1,301 @@
+/* ------------- KORINISHNING ASOSIY BLOKLARI ------------- */
+.intro-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;               /* headerdan biroz pastroq */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.8s ease-in-out; /* cross-fade */
+  overflow: hidden;
+}
+
+.intro-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* qoramtir shaffof qatlam */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 6vw;            /* chap-o‘ngdan bo‘sh joy */
+  gap: 2.5rem;
+}
+
+/* ------------- MARKAZIY MATNLAR ------------- */
+.intro-textbox {
+  max-width: 720px;
+}
+
+.intro-title {
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+  line-height: 0.9;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  text-transform: uppercase;
+}
+
+.intro-subtitle {
+  margin: 0.5rem 0 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 4vw, 3.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ------------- SO'ROVNOMA TUGMASI ------------- */
+.survey-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.9rem 2.25rem 0.9rem 0.9rem;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 64px;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  overflow: hidden;
+}
+
+.survey-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.survey-icon {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #2478ff;      /* brend rang */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.survey-label {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: left;
+}
+
+/* ------------- ARROWLAR (NEXT / PREV) ------------- */
+.arrows-box {
+  position: absolute;
+  top: 50%;
+  right: 4vw;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.arrow-btn {
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.arrow-btn:last-child {
+  width: 84px;
+  height: 84px;
+}
+
+.arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: scale(1.05);
+}
+
+/* ------------- RAQAMLI SLIDE INDIKATORLARI ------------- */
+.counter-box {
+  position: absolute;
+  bottom: 25vh;
+  right: 4vw;
+  padding: 0.6rem 1.8rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 60px;
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.counter-item {
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 600;
+  opacity: 0.55;
+  cursor: pointer;
+  transition: opacity 0.25s, transform 0.25s, font-size 0.25s;
+  user-select: none;
+}
+
+.counter-item:hover:not(.active) {
+  opacity: 0.8;
+}
+
+.counter-item.active {
+  font-size: 3.4rem;
+  font-weight: 800;
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+/* ------------- MODAL (BACKDROP + OYNA) ------------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-window {
+  position: relative;
+  width: min(90%, 440px);
+  background: #fff;
+  border-radius: 32px;
+  padding: 3rem 2.5rem 2.75rem;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: -22px;
+  right: -22px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #ff0000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s;
+}
+
+.modal-close:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.modal-title {
+  margin: 0 0 2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.05rem;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 18px;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  outline: none;
+  border-color: #2478ff;
+  box-shadow: 0 0 0 3px rgba(36, 120, 255, 0.15);
+}
+
+.modal-submit {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.modal-submit:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.modal-note {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #555;
+  line-height: 1.2;
+}
+
+/* ------------- RESPONSIVE QOIDALAR ------------- */
+@media (max-width: 1024px) {
+  .intro-title {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+  .intro-subtitle {
+    font-size: clamp(1rem, 6vw, 2.2rem);
+  }
+  .arrow-btn,
+  .survey-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .survey-btn {
+    padding: 0.7rem 2rem 0.7rem 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-overlay {
+    align-items: center;     /* markazga */
+    text-align: center;
+    padding: 0 4vw;
+  }
+  .survey-btn {
+    align-self: center;
+    flex-direction: row;
+    gap: 0.8rem;
+    padding: 0.65rem 1.5rem 0.65rem 0.65rem;
+  }
+  .arrows-box {
+    top: auto;
+    bottom: 12vh !important;
+    right: 50%;
+    transform: translate(50%, 0) scale(0.8) !important;
+  }
+  .counter-box {
+    bottom: 2vh;
+    right: 50%;
+    transform: translateX(50%) scale(0.8) !important;
+  }
+}

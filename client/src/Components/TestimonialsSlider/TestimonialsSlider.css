@@ -1,0 +1,94 @@
+/* --- Umumiy maket --- */
+.testi {
+  padding: 4rem 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.testi__title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: left;
+  margin-bottom: .5rem;
+}
+.testi__subtitle {
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 640px;
+}
+
+/* --- Slider kartochkasi --- */
+.testi__card {
+  background: #111214;
+  color: #fff;
+  border-radius: 4rem;
+  padding: 3rem 2.5rem 3rem 3.5rem;
+  position: relative;
+  margin: 0 .75rem;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testi__quote {
+  position: absolute;
+  left: -1.8rem;          /* tashqariga chiqadi */
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff1c1c;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.testi__quote svg {
+  color: #fff;
+}
+
+.testi__name {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.testi__text {
+  font-size: .95rem;
+  line-height: 1.55;
+  flex: 1;
+}
+
+/* --- Slick maxsus tugmalari --- */
+.testi__nav-btn {
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #e7e7e7;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.testi__nav-btn:hover {
+  background: #d4d4d4;
+}
+.slick-prev, .slick-next {
+  bottom: -3.5rem;               /* kartochkalar tagiga chiqarish */
+  top: auto;
+}
+.slick-prev { left: calc(50% - 2.5rem); }
+.slick-next { left: calc(50% + 2.5rem); }
+.slick-prev:before,
+.slick-next:before {             /* default ikonlarni yashirish */
+  display: none;
+}
+
+/* --- Responsivlik --- */
+@media (max-width: 640px) {
+  .slick-prev { left: calc(50% - 2rem); }
+  .slick-next { left: calc(50% + 2rem); }
+  .testi__card { padding: 2.5rem 1.75rem 2.5rem 3rem; }
+}

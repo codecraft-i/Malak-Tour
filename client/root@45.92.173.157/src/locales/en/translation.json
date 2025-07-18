@@ -1,0 +1,138 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "international_tours": "International Tours",
+    "national_tours": "Tours across Uzbekistan",
+    "pic_gallary": "Photo Gallery",
+    "contacts": "Contacts",
+    "call_me": "Call Me",
+    "more": "More",
+    "connection": "Contact"
+  },
+  "intro": {
+    "h_tx1": "Mysteries of Ancient Egypt",
+    "h_tx1_sb": "A historic journey beneath the pyramids' shadow",
+    "h_tx2": "Palm-Coast Bliss",
+    "h_tx2_sb": "Sunny relaxation and tropical breeze",
+    "h_tx3": "Green-Forest Escape",
+    "h_tx3_sb": "Pure tranquility in nature’s embrace",
+    "h_tx4": "Picturesque Seaside View",
+    "h_tx4_sb": "Endless sea and white sands",
+
+    "request_l_title": "Leave a Request",
+    "request_l": "Submit a request",
+    "name": "Your Name",
+    "phone_n": "Phone Number",
+    "input_a": "Other",
+
+    "sc1": "Your request has been received!",
+    "sc2": "We’ll contact you shortly.",
+
+    "send": "Send",
+
+    "condition": "I agree to send and download the information."
+  },
+   "categorySections": {
+    "ancient": {
+      "title": "HISTORICAL TOURS",
+      "subtitle": "Egypt, Greece, India, China, Japan"
+    },
+    "europe": {
+      "title": "TOURS AROUND EUROPE",
+      "subtitle": "Spain, France, Germany, Italy, Montenegro"
+    },
+    "eastAsia": {
+      "title": "EAST ASIA TOURS",
+      "subtitle": "Thailand, Singapore, Malaysia, Vietnam"
+    },
+    "coastal": {
+      "title": "COASTAL TOURS",
+      "subtitle": "Maldives, Turkey, Spain, Vietnam"
+    },
+    "more": "More details"
+  },
+  "about": {
+    "features": {
+      "allTours": {
+        "title": "ALL TYPES OF TOURS",
+        "subtitle": "from budget-friendly to premium active leisure"
+      },
+      "guaranteed": {
+        "title": "GUARANTEED",
+        "subtitle": "safety ensured by the agency"
+      },
+      "top100": {
+        "title": "TOP 100 RATED",
+        "subtitle": "among travel agencies in Uzbekistan"
+      }
+    },
+    "title": "About us",
+    "intro": "Malak Tour – Your trusted partner in global travel",
+    "p1": "Malak Tour is a reliable travel agency trusted by thousands of tourists. We organize unforgettable trips to the most popular destinations in the world. Thailand, Vietnam, Turkey, Egypt, UAE (Dubai), Georgia, Montenegro – these are just a few of our destinations.",
+    "p2": "We also offer exclusive tour packages to more than 29 European countries including the UK, Italy, France, and Germany. With our personalized approach, your travel experience is smooth and comfortable.",
+    "p3": "With us, you not only travel but also receive full assistance in obtaining necessary tourist visas. Malak Tour – your reliable path to a dream journey!",
+    "more": "Learn more",
+    "imageAlt": "Travelers on a beach",
+    "stats": {
+      "quality": "quality guaranteed",
+      "qualityHint": "for all tours",
+      "satisfaction": "happy clients",
+      "satisfactionHint": "according to surveys",
+      "orders": "orders",
+      "ordersHint": "in this year alone"
+    }
+  },
+  "gallery": {
+    "title": "PHOTO GALLERY",
+    "subtitle": "Guaranteed quality and on-time service",
+    "viewAll": "View all",
+    "close": "Close",
+    "imageAlt": "travel photo",
+    "modalImageAlt": "Large image"
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "We earn the trust of others"
+  },
+  "testimonials": {
+    "title": "Feedback on our services",
+    "subtitle": "Your opinion matters to us. We consider every comment.",
+    "loading": "Loading data..."
+  },
+  "footer": {
+    "brand": {
+      "title": "PREMIUM QUALITY",
+      "highlight": "TRAVEL",
+      "tagline": "THE WORLD AT YOUR FINGERTIPS"
+    },
+    "cta": "LEAVE A REQUEST",
+    "newsletter": {
+      "label": "For news and promotions",
+      "thanks": "Thank you for subscribing!",
+      "placeholder": "Your email address",
+      "button": "Subscribe",
+      "sending": "Sending…"
+    },
+    "address": "Tashkent, Chilanzar block 19, building 60",
+    "hours": "24/7 Service",
+    "loading": "Sending…",
+    "copyright": "All rights reserved"
+  },
+    "galleries": {
+    "allPhotos": "Photo Gallery"
+  },
+  "about-p": {
+      "title": "About the Company",
+      "intro": "Our travel company is a reliable partner for those who want to discover new horizons, dive into different cultures, and experience unforgettable emotions.",
+      "p1": "We specialize in organizing comfortable and meaningful tours for both experienced travelers and those going abroad for the first time.",
+      "p2": "“Best Magistic Tour” offers trips from Tashkent to the following destinations: Egypt, Turkey, Dubai, Vietnam, Thailand, Maldives, Bali, Malaysia, Georgia, Azerbaijan, and European countries.",
+      "p3": "Our tour operator agency organizes unforgettable vacations for you and your family in the most beautiful countries around the world. Thanks to our leadership, reputation, and client care, we are recognized as one of the leading travel companies in Uzbekistan.",
+      "contactCall": "Contact us today – we’ll help start the adventure you’ve been dreaming of!",
+      "signature": {
+        "respectfully": "Sincerely,",
+        "director": "Director of “Best Magistic Tour”",
+        "name": "Latipova Mohigul Sheralieva"
+      }
+  }
+}

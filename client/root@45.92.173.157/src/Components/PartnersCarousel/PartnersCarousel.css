@@ -1,0 +1,62 @@
+/* Umumiy blok */
+.partners {
+  background: #f1f2f3;
+  padding: 4rem 0;
+}
+
+.partners__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.partners__title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.partners__subtitle {
+  color: #6b6b6b;
+  margin-bottom: 3rem;
+}
+
+/* Slick’dagi har bir slayd (div.partner-card) */
+.partner-card {
+  background: #fff;
+  border-radius: 2.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  height: 110px;
+  display: flex !important;      /* Slick inline style’ini override */
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px;                /* spaceBetween o‘rnini bosadi */
+  transition: transform 0.3s ease;
+}
+
+.partner-card img {
+  max-height: 70%;
+  max-width: 80%;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.9);
+  transition: filter 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-6px) scale(1.04);
+}
+
+.partner-card:hover img {
+  filter: none;
+}
+
+/* Slick nuqtalarini ranglash (ixtiyoriy) */
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #c5c5c5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0d0d0d;
+}

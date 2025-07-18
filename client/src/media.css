@@ -1,0 +1,21 @@
+@media (max-width: 1250px) {
+    .card-title {
+        font-size: 14px;
+    }
+    .inner-arrow {
+        width: 50%;
+        transform: translate(-50%) scale(0.8);
+    }
+    .inner-arrow:hover {
+        transform: translate(-50%) scale(0.9);
+    }
+}
+
+@media (max-width: 900px) {
+    .card-title {
+        top: 10px;
+    }
+    .inner-arrow {
+        bottom: 2px;
+    }
+}

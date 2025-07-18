@@ -1,0 +1,77 @@
+.about-page {
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.about-page__container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-page__text {
+  flex: 1;
+}
+
+.about-page__text h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-page__text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.about-page__text .highlight {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.about-page__text .contact-invite {
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 24px;
+  color: #2b2b2b;
+}
+
+.about-page__signature p {
+  font-weight: bold;
+  color: #444;
+  margin-top: 8px;
+}
+
+.about-page__image {
+  flex: 0 0 400px;
+}
+
+.about-page__image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 1024px) {
+  .about-page__container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .about-page__image {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
